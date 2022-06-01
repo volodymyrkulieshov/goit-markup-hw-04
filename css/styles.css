@@ -172,10 +172,10 @@ button {
 
 .header-tel,
 .header-mail {
-  display: block;
+  display: flex;
+  align-items: center;
   padding-top: 32px;
   padding-bottom: 32px;
-  align-items: baseline;
 }
 
 .header-mail::before {
@@ -185,7 +185,8 @@ button {
   height: 12px;
   margin-right: 10px;
   background-image: url(../images/envelope-logo.svg);
-  background-size: contain;
+  background-position: center;
+  background-size: cover;
 }
 
 .header-tel::before {
@@ -195,7 +196,8 @@ button {
   height: 16px;
   margin-right: 10px;
   background-image: url(../images/smartphone-logo.svg);
-  background-size: contain;
+  background-position: center;
+  background-size: cover;
 }
 
 .header-tel:hover,
