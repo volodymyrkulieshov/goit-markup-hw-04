@@ -314,7 +314,7 @@ button {
   width: 270px;
   height: 120px;
   margin-bottom: 30px;
-  background-image: url(../images/astronaut.png);
+  background-image: url(../images/astronaut.svg);
   background-color: #f5f4fa;
   background-repeat: no-repeat;
   background-size: 65px 70px;
@@ -429,6 +429,7 @@ button {
 .clients-list .clients-item:not(:last-child) {
   margin-right: 30px;
 }
+
 /* ---------------------FOOTER---------------------------- */
 
 .footer {
