@@ -178,34 +178,26 @@ button {
   padding-bottom: 32px;
 }
 
-.header-mail::before {
-  display: inline-block;
-  content: '';
+.icon-mail {
   width: 16px;
   height: 12px;
   margin-right: 10px;
-  background-image: url(../images/envelope-logo.svg);
-  background-position: center;
-  background-size: cover;
+  fill: currentColor;
 }
 
-.header-tel::before {
-  display: inline-block;
-  content: '';
+.icon-tel {
   width: 10px;
   height: 16px;
   margin-right: 10px;
-  background-image: url(../images/smartphone-logo.svg);
-  background-position: center;
-  background-size: cover;
+  fill: currentColor;
 }
 
-.header-tel:hover,
-.header-tel:focus {
-  color: var(--brand-accent);
-}
 .header-mail:hover,
 .header-mail:focus {
+  color: var(--brand-accent);
+}
+.header-tel:hover,
+.header-tel:focus {
   color: var(--brand-accent);
 }
 /* ------------------------HERO------------------------ */
@@ -275,7 +267,7 @@ button {
   width: 270px;
   height: 120px;
   margin-bottom: 30px;
-  background-image: url(../images/satelite.svg);
+  background-image: url(../images/antenna.svg);
   background-color: #f5f4fa;
   background-repeat: no-repeat;
   background-size: 65px 70px;
@@ -417,26 +409,57 @@ button {
 }
 
 /* ---------------------CLIENTS--------------------------- */
+
+.clients-title {
+  margin-bottom: 50px;
+}
+
 .clients-list {
   display: flex;
   justify-content: center;
+  padding: 0;
+  margin: 0;
 }
 
-.clients-list .clients-item {
-  max-width: 170px;
+.clients-item {
+  width: 170px;
+  height: 92px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
 }
-
-.clients-list .clients-item:not(:last-child) {
+.clients-item:not(:last-child) {
   margin-right: 30px;
 }
+
+.clients-link {
+  display: flex;
+  justify-content: center;
+  padding: 16px 32px;
+  fill: #afb1b8;
+}
+
+.clients-link:hover,
+.clients-link:focus {
+  fill: var(--brand-accent);
+}
+.clients-item:hover,
+.clients-item:focus {
+  border-color: var(--brand-accent);
+}
+
+/* .icon-client:hover {
+  fill: var(--brand-accent);
+} */
 
 /* ---------------------FOOTER---------------------------- */
 
 .footer {
+  display: flex;
   background-color: var(--footer-bgc);
   padding-top: 60px;
   padding-bottom: 60px;
 }
+
 .logo-footer {
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
@@ -482,6 +505,10 @@ button {
 .footer-tel:hover,
 .footer-tel:focus {
   color: var(--brand-accent);
+}
+
+.soc-list {
+  display: flex;
 }
 
 /* ____________PORTFOLIO______________________________ */
