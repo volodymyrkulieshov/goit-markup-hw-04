@@ -399,13 +399,45 @@ button {
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
-
   color: var(--basic-color);
+  padding-bottom: 16px;
 }
 
 .employeer-card {
   padding-top: 30px;
   padding-bottom: 30px;
+}
+
+.employeer-soc-list {
+  display: flex;
+  justify-content: center;
+}
+.employeer-soc-list .soc-item {
+  width: 44px;
+  height: 44px;
+  margin-right: 10px;
+  border-radius: 50%;
+}
+.employeer-soc-list .soc-item:last-child {
+  margin-right: 0;
+}
+
+.employeer-soc-list .soc-item:hover,
+.employeer-soc-list .soc-item:focus {
+  background-color: var(--brand-accent);
+}
+
+.employeer-soc-list .soc-item .soc-link {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  padding: 12px;
+  fill: #afb1b8;
+}
+
+.employeer-soc-list .soc-item .soc-link:hover,
+.employeer-soc-list .soc-item .soc-link:focus {
+  fill: var(--secondary-title-color);
 }
 
 /* ---------------------CLIENTS--------------------------- */
@@ -506,9 +538,50 @@ button {
 .footer-tel:focus {
   color: var(--brand-accent);
 }
-
+/* ----------------------JOIN US-------------------------- */
+.footer > .container {
+  display: flex;
+  align-items: baseline;
+}
+.join-thumb {
+  margin-left: 70px;
+}
+.join-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--secondary-title-color);
+  margin-bottom: 20px;
+}
 .soc-list {
   display: flex;
+  justify-content: center;
+}
+.soc-item {
+  width: 44px;
+  height: 44px;
+  margin-right: 10px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.soc-item:last-child {
+  margin-right: 0;
+}
+
+.soc-item:hover,
+.soc-item:focus {
+  background-color: var(--brand-accent);
+}
+
+.soc-link {
+  display: flex;
+  width: 100%;
+  height: 100%;
+
+  padding: 12px;
+  fill: var(--secondary-title-color);
 }
 
 /* ____________PORTFOLIO______________________________ */
@@ -527,7 +600,7 @@ button {
   margin-left: 8px;
 }
 
-.filter-bnt-accent {
+/* .filter-bnt-accent {
   font-family: inherit;
   font-weight: 500;
   font-size: 16px;
@@ -538,7 +611,7 @@ button {
   padding: 6px 22px;
   border-radius: 4px;
   border: none;
-}
+} */
 
 .filter-bnt {
   font-family: inherit;
@@ -557,6 +630,8 @@ button {
 .filter-bnt:focus {
   background-color: var(--brand-accent);
   color: var(--secondary-title-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .example-list {
@@ -572,6 +647,12 @@ button {
 
   margin-left: 30px;
   margin-bottom: 30px;
+}
+
+.example-item:hover,
+.example-item:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .example-title {
