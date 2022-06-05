@@ -14,6 +14,7 @@
   --basic-bgc: #ffffff;
   --footer-bgc: #2f303a;
   --border-header: #ececec;
+  --hero-bgc: #c4c4c4;
 }
 
 /* ------------------------------BODY-------------------------- */
@@ -204,7 +205,7 @@ button {
   height: 600px;
   margin-left: auto;
   margin-right: auto;
-  background-color: #c4c4c4;
+  background-color: var(--hero-bgc);
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
     url(../images/background_hero.jpg);
   background-repeat: no-repeat;
@@ -398,7 +399,7 @@ button {
   line-height: 1.19;
   text-align: center;
   color: var(--basic-color);
-  padding-bottom: 16px;
+  margin-bottom: 16px;
 }
 
 .employeer-card {
@@ -635,17 +636,8 @@ button {
   margin-bottom: 30px;
 }
 
-.example-img {
-  display: block;
-}
-
 .example-img:hover,
 .example-img:focus {
-  background: rgba(33, 150, 243, 0.2);
-}
-
-.example-item:hover,
-.example-item:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
